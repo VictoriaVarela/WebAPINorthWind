@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\usuario\Pictures\PROYECTOS\WebAPINorthWind\WebAPINorthWind\NorthWindBlazor\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\usuario\Pictures\PROYECTOS\WebAPINorthWind\WebAPINorthWind\NorthWindBlazor\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>

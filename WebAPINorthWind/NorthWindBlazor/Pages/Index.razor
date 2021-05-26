@@ -1,0 +1,59 @@
+﻿@page "/"
+
+<div class="container">
+    <div class="form-field">
+        <label>Id:</label>
+        <div>
+            <input type="text" id="id" @bind="Product.Id" />
+        </div>
+    </div>
+    <div class="form-field">
+        <label>Nombre:</label>
+        <div>
+            <input type="text" id="name" @bind="Product.Name" />
+        </div>
+    </div>
+    <div class="form-field">
+        <label>Precio Unitario:</label>
+        <div>
+            <input type="text" id="unitPrice" @bind="Product.UnitPrice" />
+        </div>
+    </div>
+
+    <div class="form-field mt-2 mb-2">
+        <button @onclick="AddProduct"
+                class="btn btn-primary">
+            Agregar un producto
+        </button>
+        <button @onclick="ShowProducts"
+                class="btn btn-primary">
+            Mostrar Productos
+        </button>
+        <button @onclick="FindByld"
+                class="btn btn-primary">
+            Buscar por Id
+        </button>
+        <button @onclick="UpdateProduct"
+                class="btn btn-primary">
+            Modificar producto
+        </button>
+        <button @onclick="DeleteProduct"
+                class="btn btn-primary">
+            Eliminar producto
+        </button>
+    </div>
+    <div> @Message</div>
+    <div>
+        <table id="products"
+               class="table table-bordered table-striped table-hover table-sm">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>UnitPrice</th>
+            </tr>
+        </thead>
+        <tbody>@TBody</tbody>
+        </table>
+    </div>
+</div>
